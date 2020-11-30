@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/ic_home"
+        android:title="Login" />
+    <item
+        android:id="@+id/registration"
+        android:icon="@drawable/ic_home"
+        android:title="Registration" />
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/ic_home"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/aboutus"
+        android:icon="@drawable/ic_home"
+        android:title="About Us" />
+    <item
+        android:id="@+id/atmLocations"
+        android:icon="@drawable/ic_home"
+        android:title="Atm Locations" />
+    <item
+        android:id="@+id/terms"
+        android:icon="@drawable/ic_home"
+        android:title="Terms and Conditions" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_home"
+        android:title="Logout" />
+
+</menu>

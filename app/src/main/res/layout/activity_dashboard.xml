@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    tools:context=".DashboardActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:isScrollContainer="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="Bank Asia Logo"
+            android:padding="10dp"
+            android:src="@drawable/logoasia" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wlelcome"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Md Mosharof Haque"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="2dp">
+
+                    <TextView
+                        android:id="@+id/baln"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Tap For Balance"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_own"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:id="@+id/transfer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/fundtran" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Fund Transfer"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:id="@+id/topup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/topup" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Top Up"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:id="@+id/billpay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/bill" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="15dp"
+                                android:text="Bills Pay"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:id="@+id/baksh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/bkash" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="bKash"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:id="@+id/creditcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/credit" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Credit Card"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:id="@+id/cheque"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/cheque" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Cheque"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/standing" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Standing Ins"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/apyoneer" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Payoneer"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_back"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ecommerce" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="eCommerce"
+                                android:textColor="#ffffff"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
