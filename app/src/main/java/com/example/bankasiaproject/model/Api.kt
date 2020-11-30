@@ -1,6 +1,5 @@
 package com.example.bankasiaproject.model
 
-import io.reactivex.Single
 import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.*
@@ -32,10 +31,10 @@ interface Api {
         @Body params: RequestBody?
     ): Call<ApiResponse>
 
-    @PUT("/delete/{id}}")
+    @DELETE("/delete/{id}}")
     fun userDelete(
-        @Field("id") id: Int?
-    ): Call<ApiResponse>
+        @Path("id") id: Int?
+    ): Call<String>
 
 
 }

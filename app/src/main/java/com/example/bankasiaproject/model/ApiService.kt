@@ -1,13 +1,13 @@
 package com.example.bankasiaproject.model
 
 import com.google.gson.GsonBuilder
-import io.reactivex.Single
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Path
 
 
 class ApiService {
@@ -41,6 +41,10 @@ class ApiService {
 
     fun updateUser(params: RequestBody): Call<ApiResponse> {
         return apiinstance.userUpdate(params)
+    }
+
+    fun userDelete(@Path("id") id: Int?): Call<String> {
+        return apiinstance.userDelete(id)
     }
 
 
